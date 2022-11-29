@@ -2,7 +2,7 @@
 
 
 def uppercase(str):
-    result = ' '
+    result = ''
     for i in str:
         letter = ord(i)
         if  letter <= 96 and letter <= 122:
