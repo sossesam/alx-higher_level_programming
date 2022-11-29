@@ -2,16 +2,11 @@
 
 
 def uppercase(str):
-    for i in range(len(str)):
-        if ord(str[i]) <= 96 and ord(str[i]) <= 122:
-            if i == len(str) - 1:
-                x = "\n"
-            else:
-                x = ""
-            print("{}".format(chr((ord(str[i])))), end=x)
+    result = ' '
+    for i in str:
+        letter = ord(i)
+        if  letter <= 96 and letter <= 122:
+            result = result + chr(letter)
         else:
-            if i == len(str) - 1:
-                x = "\n"
-            else:
-                x = ""
-            print("{}".format(chr((ord(str[i])) - 32)), end=x)
+            result = result + chr((letter - 32))
+    print("{}".format(result), end="\n")
