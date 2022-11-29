@@ -8,9 +8,9 @@ def pow(a, b):
         length = length * -1
 
     for i in range(length):
-        if b <= 0:
+        if b < 0:
             result = result / a
         else:
             result = result * a
-        
+
     return result
