@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-answer = " "
+answer = ""
 letter = 122
 for i in range(1, 27):
         if i % 2 == 0:
