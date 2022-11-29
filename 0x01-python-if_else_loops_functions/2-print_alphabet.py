@@ -2,4 +2,4 @@
 n = 0
 
 for n in range(97,123):
-    print(f"{chr(n)}", end="")
+    print("{}".format(chr(n)), end="")
