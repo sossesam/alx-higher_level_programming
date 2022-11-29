@@ -5,7 +5,7 @@ def uppercase(str):
     result = ''
     for i in str:
         letter = ord(i)
-        if  letter <= 96 and letter <= 122:
+        if letter <= 96 and letter <= 122:
             result = result + chr(letter)
         else:
             result = result + chr((letter - 32))
