@@ -10,4 +10,3 @@ if n > 0:
         print(f"{i + 1}: {x[i + 1]}")
 else:
     print(f"{n} arguments.")
-    
