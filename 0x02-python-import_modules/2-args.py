@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 if __name__ == '__main__':
-    import sys
+    from sys import argv
 
-n = len(sys.argv) - 1
-x = (sys.argv)
+n = len(argv) - 1
+x = (argv)
 if n > 0:
     print(f"{n} arguments:")
     for i in range(n):
