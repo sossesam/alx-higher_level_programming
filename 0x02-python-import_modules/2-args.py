@@ -2,11 +2,13 @@
 if __name__ == '__main__':
     import sys
 
-n = len(sys.argv) - 1
-x = (sys.argv)
-if n > 0:
-    print(f"{n} arguments:")
-    for i in range(n):
-        print(f"{i + 1}: {x[i + 1]}")
+argv = sys.argv[1:]
+x = len(argv)
+if x > 0:
+    print(f"{x} arguments:")
+    for i in range(x):
+        print(f"{i + 1}: {argv[i]}")
 else:
-    print(f"{n} arguments.")
+    print(f"{x} arguments.")
+
+
