@@ -3,7 +3,7 @@
 import sys
 
 n = len(sys.argv) - 1
-x = sys.argv
+x = (sys.argv)
 if n > 0:
     print(f"{n} arguments:")
     for i in range(n):
