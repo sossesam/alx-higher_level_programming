@@ -12,7 +12,7 @@ if arg_len != 4:
     exit(1)
 else:
     if argv[2] == operator[0]:
-       result = add(int(argv[1]), int(argv[3]))
+        result = add(int(argv[1]), int(argv[3]))
     elif argv[2] == operator[1]:
         result = sub(int(argv[1]), int(argv[3]))
     elif argv[2] == operator[2]:
