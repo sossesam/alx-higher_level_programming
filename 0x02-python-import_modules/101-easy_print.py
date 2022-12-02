@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-import printer
+if __name__ == '__main__':
+    import printer
 printer
