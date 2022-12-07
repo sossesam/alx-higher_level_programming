@@ -6,9 +6,9 @@ def uniq_add(my_list=[]):
         if x not in newList:
             newList.append(x)
 
-    def sum_up(test = []):
+    def sum_up(paramList=[]):
         z = 0
-        for y in test:
+        for y in paramList:
             z = y + z
         return z
 
