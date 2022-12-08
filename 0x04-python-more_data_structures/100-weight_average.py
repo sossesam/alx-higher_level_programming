@@ -5,7 +5,9 @@ def weight_average(my_list=[]):
 
     if len(my_list) > 0:
         for x in my_list:
-         result =  round(sum(list(map(mul,my_list))), 2)/round(sum(list(map(lambda x: x[1], my_list))), 2)
+            add = sum(list(map(mul, my_list)))
+            div = sum(list(map(lambda x: x[1], my_list)))
+            result = add/div
         return result
     else:
         return 0
