@@ -1,16 +1,26 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if isinstance(roman_string, str):
-        result = 0
-        numb_convert = 0
-        dict_numbers = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
-                        'C': 100, 'D': 500, 'M': 1000}
-        for index in reversed(roman_string):
-            numb_convert = dict_numbers[index]
-            if result < numb_convert * 5:
-                result = result + numb_convert
+    roman_list = list(roman_string)
+    roman_length = len(roman_list)
+    roman_dict = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10,
+                  'V': 5, 'I': 1}
+    result = 0
+    count = 0
+    while count < roman_length:
+        if roman_list[count] not in roman_dict.keys():
+            result = None
+            break
+        else:
+            v = roman_dict[roman_list[count]]
+            x = roman_dict[roman_list[count - 1]]
+
+            if (v > x) and (count == 1):
+                result = v - (result)
+                count += 1
+            elif (v > x * 5):
+                result = v - (result * 2)
+                count += 1
             else:
-                result = result - numb_convert
-        return result
-    else:
-        return 0
+                result += v
+                count += 1
+    return result
