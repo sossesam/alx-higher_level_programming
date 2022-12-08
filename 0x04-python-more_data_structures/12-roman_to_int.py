@@ -14,7 +14,7 @@ def roman_to_int(roman_string):
             v = roman_dict[roman_list[count]]
             x = roman_dict[roman_list[count - 1]]
 
-            if (v > x) and (count == 1):
+            if (v > x * 5) and (count == 1):
                 result = v - (result)
                 count += 1
             elif (v > x * 5):
