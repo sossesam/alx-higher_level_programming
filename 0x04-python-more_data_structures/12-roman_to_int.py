@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     roman_list = list(roman_string)
     roman_length = len(roman_list)
-    roman_dict = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'v': 10,
+    roman_dict = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10,
                   'V': 5, 'I': 1}
     result = 0
     count = 0
@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
             break
         else:
             v = roman_dict[roman_list[count]]
-            x = x
+            x = roman_dict[roman_list[count - 1]]
 
             if (v > x) and (count == 1):
                 result = v - (result)
