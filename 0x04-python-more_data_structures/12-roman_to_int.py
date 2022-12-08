@@ -10,6 +10,9 @@ def roman_to_int(roman_string):
         if roman_list[count] not in roman_dict.keys():
             result
             break
+        elif roman_length == 0:
+            result
+            break
         else:
             v = roman_dict[roman_list[count]]
             x = roman_dict[roman_list[count - 1]]
