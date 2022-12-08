@@ -8,7 +8,7 @@ def roman_to_int(roman_string):
     count = 0
     while count < roman_length:
         if roman_list[count] not in roman_dict.keys():
-            result = None
+            result = 0
             break
         else:
             v = roman_dict[roman_list[count]]
