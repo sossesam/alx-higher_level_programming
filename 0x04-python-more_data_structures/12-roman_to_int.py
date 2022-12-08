@@ -7,7 +7,7 @@ def roman_to_int(roman_string):
                         'C': 100, 'D': 500, 'M': 1000}
         for index in reversed(roman_string):
             numb_convert = dict_numbers[index]
-            if result < numb_convert:
+            if result < numb_convert * 5:
                 result = result + numb_convert
             else:
                 result = result - numb_convert
