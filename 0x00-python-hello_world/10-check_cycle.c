@@ -6,8 +6,6 @@ int check_cycle(listint_t *list)
 
 
 
-    head = malloc(sizeof(listint_t));
-    temp = malloc(sizeof(listint_t));
 
     if(list == NULL || list->next == NULL)
                             return(0);
@@ -15,7 +13,7 @@ int check_cycle(listint_t *list)
     head = list->next;
     temp = head;
 
-    while(head != NULL || head->next == NULL){
+    while(head != NULL){
         if(head->next == temp)
         {
             return(1);
