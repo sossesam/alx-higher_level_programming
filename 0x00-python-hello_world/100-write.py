@@ -1,5 +1,8 @@
-#!/usr/bin/python3
-import sys
 
-sys.stderr.write("and that piece of art is useful - Dora Korpar, 2015-10-19\n")
-exit(1)
+import dis
+
+def magic_calculation(a, b):
+    return 98 + (a ** b)
+
+
+dis.dis(magic_calculation)
