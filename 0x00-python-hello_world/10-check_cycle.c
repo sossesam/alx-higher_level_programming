@@ -9,6 +9,8 @@ int check_cycle(listint_t *list)
     head = malloc(sizeof(listint_t));
     temp = malloc(sizeof(listint_t));
 
+    if(list == NULL || list->next == NULL)
+                            return(0);
 
     head = list->next;
     temp = head;
