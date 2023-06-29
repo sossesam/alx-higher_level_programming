@@ -8,7 +8,7 @@ def is_int(x):
         return
 
 
-def safe_print_list_integers(my_list = [], x = 0):
+def safe_print_list_integers(my_list=[], x=0):
     i = 0
     check = 0
     for y in my_list:
@@ -22,7 +22,7 @@ def safe_print_list_integers(my_list = [], x = 0):
     for z in range(x):
         try:
             if is_int(my_list[z]):
-                print("{:d}".format(my_list[z]), end = "")
+                print("{:d}".format(my_list[z]), end="")
                 y += 1
             check += 1
 
