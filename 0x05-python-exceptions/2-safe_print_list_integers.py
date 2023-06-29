@@ -22,12 +22,12 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             if is_int(my_list[z]):
                 print("{:d}".format(my_list[z]), end="")
-            y+=1
+                y+=1
             check += 1
 
         except(ValueError):
             return ""
 
     print("",end="\n")
-    return check
+    return y
 
