@@ -11,5 +11,5 @@ def safe_print_list(my_list=[], x=0):
         except Exception:
             ""
             return z
-    print("", end = "\n")
+    print("", end="\n")
     return z
