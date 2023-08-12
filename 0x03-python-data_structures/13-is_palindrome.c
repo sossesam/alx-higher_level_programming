@@ -28,7 +28,7 @@ int is_palindrome(listint_t **head)
 listint_t *check = *head;
 listint_t *temp = *reverse_listint(head);
 
-if (check == NULL || *head == NULL)
+if (head == NULL || *head == NULL)
 {
 return (1);
 }
