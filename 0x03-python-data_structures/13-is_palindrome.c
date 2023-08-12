@@ -30,7 +30,7 @@ listint_t *temp = *reverse_listint(head);
 
 if (check == NULL)
 {
-return (0);
+return (1);
 }
 
 while (check != NULL)
