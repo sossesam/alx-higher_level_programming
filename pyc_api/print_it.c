@@ -1,11 +1,14 @@
 #include <stdio.h>
-#include <Python.h>
+#include <python2.7/Python.h>
 
 int print_it(PyObject *op)
 {
-    PyObject *bytes = pyBytes_FromObject(op);
-    char *s = PyBytes_AsString(bytes);
+    PyListObject *arr;
 
-    printf("%s\n",s);
+    arr = (PyListObject *)op;
+
+    printf("[*] Size of the Python List = %ld\n", arr->ob_size);
+    printf("[*] Allocated = %ld\n", arr->allocated);
+
     return(0);
 }
