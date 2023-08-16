@@ -1,14 +1,16 @@
 #include <stdio.h>
-#include <python2.7/Python.h>
+#include "Python.h"
 
 int print_it(PyObject *op)
 {
-    PyListObject *arr;
+    PyObject *bytes = PyBytes_FromObject(op);
+    Py_ssize_t len = PyBytes_Size(bytes);
+    Py_ssize_t i = 0;
 
-    arr = (PyListObject *)op;
+    char *s = PyBytes_AsString(bytes);
 
-    printf("[*] Size of the Python List = %ld\n", arr->ob_size);
-    printf("[*] Allocated = %ld\n", arr->allocated);
-
+    for(i = 0; i < len; i++){
+        printf("%c",s[i]);
+    }
     return(0);
 }
