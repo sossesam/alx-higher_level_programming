@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+"""square was initialized"""
 
 class Square:
+    """square """
 
     def __init__(self,size = 0):
                     if type(size) != int:
