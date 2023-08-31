@@ -37,3 +37,6 @@ class Square:
             for y in range(count):
                 print("#",end="")
             print("\n",end="")
+
+        if count < 1:
+            print("\n")
