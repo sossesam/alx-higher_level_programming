@@ -40,7 +40,7 @@ class Square:
             while x < count:
                 y = 0
                 while y < count:
-                    print("#",end="")
+                    print("#", end="")
                     y = y+1
                 print("")
                 x = x+1
