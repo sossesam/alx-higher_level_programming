@@ -39,4 +39,4 @@ class Square:
             for i in range(count):
                 for y in range(count):
                     print("#", end="")
-                print("\n", end="")
+                print("", end="\n")
