@@ -33,10 +33,10 @@ class Square:
     def my_print(self):
         count = self.__size
 
-        for i in range(count):
-            for y in range(count):
-                print("#",end="")
-            print("\n",end="")
-
         if count < 1:
             print("\n")
+        else:
+            for i in range(count):
+                for y in range(count):
+                    print("#", end="")
+                print("\n", end="")
