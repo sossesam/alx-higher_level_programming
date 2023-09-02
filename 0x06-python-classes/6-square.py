@@ -34,8 +34,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-            self.__position = value
-
+        self.__position = value
 
     @property
     def size(self):
@@ -43,7 +42,7 @@ class Square:
 
     @size.setter
     def size(self, value):
-            self.__size = value
+        self.__size = value
 
     def my_print(self):
         count = self.__size
