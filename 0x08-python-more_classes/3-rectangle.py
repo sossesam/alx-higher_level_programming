@@ -62,7 +62,7 @@ class Rectangle:
 
     def __str__(self):
         height = self.__height
-        while height > 1:
+        while height + 1 > 2:
             print("#" * self.__width)
             height = height - 1
         return "#" * self.__width
