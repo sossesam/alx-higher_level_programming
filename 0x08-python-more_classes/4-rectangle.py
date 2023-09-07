@@ -70,6 +70,5 @@ class Rectangle:
                 height = height - 1
             return "#" * self.__width
 
-
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
