@@ -63,10 +63,13 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        width = "#" * self.__width + "\n"
-        height = self.__height
 
-        return width * height
+        else:
+            height = self.__height
+            while height + 1 > 2:
+                print("#" * self.__width)
+                height = height - 1
+            return "#" * self.__width
 
 
 
