@@ -7,7 +7,7 @@ class Rectangle:
     """instantiate class"""
 
     number_of_instances = 0
-    print_symbol ="#"
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         Rectangle.number_of_instances += 1
@@ -72,9 +72,9 @@ class Rectangle:
         else:
             height = self.__height
             while height + 1 > 2:
-                print(self.print_symbol * self.__width)
+                print(str(self.print_symbol) * self.__width)
                 height = height - 1
-            return "{}".format(self.print_symbol) * self.__width
+            return str(self.print_symbol) * self.__width
 
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
