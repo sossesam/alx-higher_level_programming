@@ -1,6 +1,10 @@
 #!/usr/bin/python3
+""" Doc """
+
 
 def matrix_divided(matrix, div):
+    """ Doc """
+    
     new_matrix = []
 
     if type(div) != int and type(div) != float:
