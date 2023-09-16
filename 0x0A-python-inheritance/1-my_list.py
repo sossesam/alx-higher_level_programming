@@ -3,10 +3,9 @@
 
 
 class MyList(list):
-    """the initialisation process"""
 
     """method to sort the list"""
     def print_sorted(self):
-
+         
          print(sorted(self))
 
