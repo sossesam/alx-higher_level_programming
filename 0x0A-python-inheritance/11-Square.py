@@ -16,4 +16,3 @@ class Square(Rectangle):
         string representation of the rectangle
         """
         return ("[Square] {:d}/{:d}".format(self.__size, self.__size))
-
