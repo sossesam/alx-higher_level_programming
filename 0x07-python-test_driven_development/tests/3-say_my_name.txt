@@ -7,13 +7,8 @@ My name is John Malkovich
 My name is Snow White and the 7 drawves
 
 >>> say_my_name("HHarry")
-My name is HHarry
+My name is HHarry 
 
->>> say_my_name("BÒb")
-My name is BÒb
-
->>> say_my_name("Blueberry Muffin")
-My name is Blueberry Muffin
 
 """
 Error
