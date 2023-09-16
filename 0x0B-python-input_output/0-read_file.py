@@ -5,4 +5,4 @@
 def read_file(filename=""):
     """pass"""
     with open(filename,"r", encoding="utf-8") as the_file:
-        print(the_file.read())
+        print(the_file.read(),end="")
