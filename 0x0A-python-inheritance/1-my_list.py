@@ -5,9 +5,8 @@
 class MyList(list):
 
     """method to sort the list"""
-    if isinstance(list, list):
+    
+    def print_sorted(self):
 
-        def print_sorted(self):
-
-            print(sorted(self))
+         print(sorted(self))
 
