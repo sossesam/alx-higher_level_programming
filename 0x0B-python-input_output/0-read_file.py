@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""pass"""
+
 
 def read_file(filename=""):
     """pass"""
