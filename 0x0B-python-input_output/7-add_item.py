@@ -18,6 +18,13 @@ if check_file == False:
     mylist = []
     with open(filename, "w") as file:
         file.write(str(mylist))
+
+    number_of_arg = len(sys.argv)
+
+    if number_of_arg > 1:
+        for number in range(1, number_of_arg):
+            mylist.append(sys.argv[number])
+        save_to_json_file(mylist, "add_item.json")
 else:
     mylist = load_from_json_file("add_item.json")
 
