@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""pass"""
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-
-
 import sys
 import os.path
-
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+"""pass"""
 
 
 filename = "./add_item.json"
@@ -14,7 +11,7 @@ filename = "./add_item.json"
 
 check_file = os.path.exists(filename)
 
-if check_file == False:
+if check_file is False:
     mylist = []
     with open(filename, "w") as file:
         file.write(str(mylist))
@@ -25,6 +22,7 @@ if check_file == False:
         for number in range(1, number_of_arg):
             mylist.append(sys.argv[number])
         save_to_json_file(mylist, "add_item.json")
+
 else:
     mylist = load_from_json_file("add_item.json")
 
@@ -34,5 +32,3 @@ else:
         for number in range(1, number_of_arg):
             mylist.append(sys.argv[number])
         save_to_json_file(mylist, "add_item.json")
-
-
