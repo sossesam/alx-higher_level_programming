@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import json
+
 
 
 """pass"""
@@ -7,4 +7,4 @@ import json
 
 def class_to_json(obj):
     """pass"""
-    return json.dumps(obj.__dict__)
+    return obj.__dict__
