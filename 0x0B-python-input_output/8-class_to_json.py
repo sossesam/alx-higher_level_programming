@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""pass"""
-
-
 import json
+
+
+"""pass"""
 
 
 def class_to_json(obj):
