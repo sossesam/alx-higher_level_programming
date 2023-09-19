@@ -11,11 +11,11 @@ class Student:
 
     def to_json(self, attrs=None):
         items = self.__dict__
-        new_dict={}
+        new_dict = {}
 
-        if attrs != None:
+        if attrs is not None:
             for title in attrs:
-                if  title in items.keys():
+                if title in items.keys():
                     new_dict[title] = items[title]
             return new_dict
         else:
