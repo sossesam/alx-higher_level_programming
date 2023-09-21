@@ -108,7 +108,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         if type(y) is int:
-            if y > 0:
+            if y >= 0:
                 self.__y = y
             else:
                 raise ValueError("y must be >= 0")
