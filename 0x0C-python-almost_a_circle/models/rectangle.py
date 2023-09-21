@@ -28,15 +28,15 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        @property
-        def width(self):
-            return self.__width
+    @property
+    def width(self):
+        return self.__width
 
-        @width.getter
-        def width(self):
-            return self.__width
+    @width.getter
+    def width(self):
+        return self.__width
 
-        @width.setter
-        def width(self, width):
-            self.__width = width
+    @width.setter
+    def width(self, width):
+        self.__width = width
 
