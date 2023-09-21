@@ -115,13 +115,10 @@ class Rectangle(Base):
         else:
             raise TypeError(f"y must be an integer")
 
-
     def area(self):
           """
             This modules contains a class rectangle
             with all its methods and attributes
             definition
-
           """
-
           return self.__width * self.__height
