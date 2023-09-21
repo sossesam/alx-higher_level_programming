@@ -32,6 +32,10 @@ class Rectangle(Base):
         def width(self):
             return self.__width
 
+        @width.getter
+        def width(self):
+            return self.__width
+
         @width.setter
         def width(self, width):
             self.__width = width
