@@ -117,5 +117,11 @@ class Rectangle(Base):
 
 
     def area(self):
+          """
+            This modules contains a class rectangle
+            with all its methods and attributes
+            definition
+
+          """
 
           return self.__width * self.__height
