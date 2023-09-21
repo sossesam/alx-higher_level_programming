@@ -21,9 +21,18 @@ class Rectangle(Base):
         with all its methods and attributes
         definition
         """
+        Base.__init__(self, id)
+
         self.__width = width
         self.__height = height
         self.__x = x
         self.__y = y
 
-        Base.__init__(self, id)
+        @property
+        def width(self):
+            return self.__width
+
+        @width.setter
+        def width(self, width):
+            self.__width = width
+
