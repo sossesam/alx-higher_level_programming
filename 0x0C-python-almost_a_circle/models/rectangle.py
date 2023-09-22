@@ -124,6 +124,11 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """
+        This modules contains a class rectangle
+        with all its methods and attributes
+        definition
+        """
         height = 0
         for height in range(self.__height):
             width = 0
