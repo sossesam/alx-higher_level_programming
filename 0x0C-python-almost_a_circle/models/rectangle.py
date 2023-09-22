@@ -141,6 +141,11 @@ class Rectangle(Base):
         return f"[{name}] ({id}) {x}/{y} - {self.__width}/{self.__height}"
 
     def update(self, *args):
+        """
+        for
+        update
+
+        """
         position = 0
         for arg in args:
             if position == 0:
