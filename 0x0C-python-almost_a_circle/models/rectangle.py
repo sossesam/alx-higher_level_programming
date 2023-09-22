@@ -129,12 +129,9 @@ class Rectangle(Base):
         with all its methods and attributes
         definition
         """
-        height = 0
-        for height in range(self.__height):
-            width = 0
-            for width in range(self.__width):
-                print("#", end="")
-            print("\n", end="")
+        print(("\n" * self.__y) + "\n".join(((" " * self.__x) +
+                                             ("#" * self.__width))
+                                            for a in range(self.__height)))
 
     def __str__(self):
         name = type(self).__name__
