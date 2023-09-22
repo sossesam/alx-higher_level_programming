@@ -159,5 +159,3 @@ class Rectangle(Base):
             elif position == 4:
                 self.__y = arg
             position += 1
-
-
