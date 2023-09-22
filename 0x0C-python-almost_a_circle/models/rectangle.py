@@ -141,4 +141,4 @@ class Rectangle(Base):
         id = self.id
         x = self.__x
         y = self.__y
-        return f"[{name}]({id}) {x}/{y} - {self.__width}/{self.__height}"
+        return f"[{name}] ({id}) {x}/{y} - {self.__width}/{self.__height}"
