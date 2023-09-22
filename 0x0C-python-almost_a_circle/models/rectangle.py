@@ -137,9 +137,5 @@ class Rectangle(Base):
             print("\n", end="")
 
     def __str__(self):
-        """
-        This modules contains a class rectangle
-        with all its methods and attributes
-        definition
-        """
-        return f"[{type(self).__name__}] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+        name = type(self).__name__
+        return f"[{name}]({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
