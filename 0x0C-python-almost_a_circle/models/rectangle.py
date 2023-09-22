@@ -122,3 +122,12 @@ class Rectangle(Base):
         definition
         """
         return self.__width * self.__height
+
+    def display(self):
+        height = 0
+        for height in range(self.__height):
+            width = 0
+            for width in range(self.__width):
+                print("#", end="")
+            print("\n", end="")
+
