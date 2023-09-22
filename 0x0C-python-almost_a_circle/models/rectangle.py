@@ -139,6 +139,3 @@ class Rectangle(Base):
         x = self.__x
         y = self.__y
         return f"[{name}] ({id}) {x}/{y} - {self.__width}/{self.__height}"
-
-    def display(self):
-        
