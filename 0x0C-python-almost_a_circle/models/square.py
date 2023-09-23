@@ -18,10 +18,9 @@ class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
         """
-        pass
-        all
-        the
-        test
+        This modules contains a class rectangle
+        with all its methods and attributes
+        definition
         """
         self.__width = size
         self.__height = size
@@ -33,10 +32,9 @@ class Square(Rectangle):
 
     def __str__(self):
         """
-        pass
-        all
-        the
-        test
+        This modules contains a class rectangle
+        with all its methods and attributes
+        definition
         """
         name = type(self).__name__
         id = self.id
