@@ -10,6 +10,11 @@ definition
 
 
 class Square(Rectangle):
+    """
+    This modules contains a class rectangle
+    with all its methods and attributes
+    definition
+    """
 
     def __init__(self, size, x=0, y=0, id=None):
         """
