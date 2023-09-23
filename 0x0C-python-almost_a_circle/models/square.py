@@ -73,7 +73,6 @@ class Square(Rectangle):
             if "y" in kwargs:
                 self.y = kwargs["y"]
 
-
     def to_dictionary(self):
         """
         This modules contains a class rectangle
