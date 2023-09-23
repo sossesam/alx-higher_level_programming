@@ -172,6 +172,11 @@ class Rectangle(Base):
             self.__y = kwargs["y"]
 
     def to_dictionary(self):
+        """
+        This modules contains a class rectangle
+        with all its methods and attributes
+        definition
+        """
         dict = {}
         dict['x'] = self.__x
         dict['y'] = self.__y
