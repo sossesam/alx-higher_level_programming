@@ -27,11 +27,11 @@ class Base():
             self.id = Base.__nb_objects
 
     @staticmethod
-    def from_json_string(json_string):
+    def to_json_string(list_dictionaries):
         """
-        This function returns the list
-        of the json string represenation
+        This functions returns the json string representation
+        of list_dictionaries
         """
-        if json_string is None or len(json_string) == 0:
-            return ([])
-        return (json.loads(json_string))
+        if list_dictionaries is None:
+            list_dictionaries = []
+        return (json.dumps(list_dictionaries))
