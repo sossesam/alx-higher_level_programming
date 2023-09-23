@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-from models.rectangle import Rectangle
-
-
 """
 This modules contains a class rectangle
 with all its methods and attributes
 definition
 """
+from models.rectangle import Rectangle
+
+
 
 
 class Square(Rectangle):
