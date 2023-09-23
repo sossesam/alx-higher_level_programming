@@ -26,6 +26,7 @@ class Base():
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def from_json_string(json_string):
         """
         This function returns the list
