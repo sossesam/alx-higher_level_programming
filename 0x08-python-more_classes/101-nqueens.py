@@ -43,6 +43,7 @@ class Queen:
                 right[n] = j
                 self.solution(n + 1, N, right)
 
+
 if __name__ == "__main__":
     count = len(sys.argv)
 
@@ -52,7 +53,7 @@ if __name__ == "__main__":
     else:
         try:
             N = int(sys.argv[1])
-        except:
+        except Exception:
             print("N must be a number")
             exit(1)
     if N < 4:
