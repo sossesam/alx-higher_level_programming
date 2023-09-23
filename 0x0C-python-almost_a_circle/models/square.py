@@ -7,8 +7,6 @@ definition
 from models.rectangle import Rectangle
 
 
-
-
 class Square(Rectangle):
     """
     This modules contains a class rectangle
