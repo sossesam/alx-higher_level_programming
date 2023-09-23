@@ -40,7 +40,6 @@ class Square(Rectangle):
         y = self.y
         return f"[{name}] ({id}) {x}/{y} - {self.width}"
 
-
     @property
     def size(self):
         return self.width
@@ -49,4 +48,3 @@ class Square(Rectangle):
     def size(self, size):
         self.width = size
         self.height = size
-
