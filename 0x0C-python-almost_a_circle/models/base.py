@@ -5,6 +5,8 @@ with all its methods and attributes
 definition
 """
 
+import json
+
 
 class Base():
     """
@@ -23,3 +25,12 @@ class Base():
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    def from_json_string(json_string):
+        """
+        This function returns the list
+        of the json string represenation
+        """
+        if json_string is None or len(json_string) == 0:
+            return ([])
+        return (json.loads(json_string))
