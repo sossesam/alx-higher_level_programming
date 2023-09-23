@@ -72,3 +72,18 @@ class Square(Rectangle):
                 self.x = kwargs["x"]
             if "y" in kwargs:
                 self.y = kwargs["y"]
+
+
+    def to_dictionary(self):
+        """
+        This modules contains a class rectangle
+        with all its methods and attributes
+        definition
+        """
+        dict = {}
+        dict['x'] = self.x
+        dict['y'] = self.y
+        dict["size"] = self.width
+        dict["id"] = self.id
+
+        return dict
