@@ -2,13 +2,15 @@
 from models.rectangle import Rectangle
 
 
+"""
+This modules contains a class rectangle
+with all its methods and attributes
+definition
+"""
+
+
 class Square(Rectangle):
-    """
-    pass
-    all
-    the
-    test
-    """
+
     def __init__(self, size, x=0, y=0, id=None):
         """
         pass
