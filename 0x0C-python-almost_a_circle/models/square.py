@@ -20,13 +20,13 @@ class Square(Rectangle):
         with all its methods and attributes
         definition
         """
-        self.__width = size
-        self.__height = size
+        self.width = size
+        self.height = size
         self.x = x
         self.y = y
         self.id = id
 
-        super().__init__(self.__width, self.__height, self.x, self.y, self.id)
+        super().__init__(self.width, self.height, self.x, self.y, self.id)
 
     def __str__(self):
         """
@@ -38,4 +38,15 @@ class Square(Rectangle):
         id = self.id
         x = self.x
         y = self.y
-        return f"[{name}] ({id}) {x}/{y} - {self.__width}"
+        return f"[{name}] ({id}) {x}/{y} - {self.width}"
+
+
+    @property
+    def size(self):
+        return self.width
+
+    @size.setter
+    def size(self, size):
+        self.width = size
+        self.height = size
+
