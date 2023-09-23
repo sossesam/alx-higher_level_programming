@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sys import argv
+import sys
 
 """
 This modules finds all solutions for N queens problem
@@ -44,14 +44,14 @@ class Queen:
                 self.solution(n + 1, N, right)
 
 if __name__ == "__main__":
-    count = len(argv)
+    count = len(sys.argv)
 
     if count != 2:
         print("Usage: nqueens N")
         exit(1)
     else:
         try:
-            N = int(argv[1])
+            N = int(sys.argv[1])
         except:
             print("N must be a number")
             exit(1)
