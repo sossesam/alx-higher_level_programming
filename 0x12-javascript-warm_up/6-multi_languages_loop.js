@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const array =['C is fun','Python is cool','JavaScript is amazing']
+const array = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-i = 0;
+let i = 0;
 while (array[i]) {
-    console.log(array[i]);
-    i++;
+  console.log(array[i]);
+  i++;
 }

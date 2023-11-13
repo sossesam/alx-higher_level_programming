@@ -1,18 +1,17 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-function factorial(a){
-    
-    if (isNaN(a)){
-        a = 0;
-    }
+function factorial (a) {
+  if (isNaN(a)) {
+    a = 0;
+  }
 
-    num = parseInt(a)
-    if (num <= 1){
-        return 1;
-    } else{
-        return num * factorial(num - 1)
-    }
+  const num = parseInt(a);
+  if (num <= 1) {
+    return 1;
+  } else {
+    return num * factorial(num - 1);
+  }
 }
-console.log(factorial(arguments[2]))
+console.log(factorial(argv[2]));

@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-if (arguments.length > 3) {
-  console.log("Arguments found");
-} else if (arguments.length == 3) {
-  console.log("Argument found");
+if (argv.length > 3) {
+  console.log('Arguments found');
+} else if (argv.length === 3) {
+  console.log('Argument found');
 } else {
-    console.log("No argument")
+  console.log('No argument');
 }

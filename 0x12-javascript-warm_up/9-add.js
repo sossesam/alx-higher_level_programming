@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-function add(a,b) {
-
-    console.log(a + b)
+function add (a, b) {
+  console.log(a + b);
 }
 
-add(parseInt(arguments[2]), parseInt(arguments[3]))
+add(parseInt(argv[2]), parseInt(argv[3]));

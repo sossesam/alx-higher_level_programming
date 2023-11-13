@@ -1,22 +1,21 @@
 #!/usr/bin/node
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-const num = parseInt(arguments[2]);
-let the_x = 'X'
+const num = parseInt(argv[2]);
 
 let x = 0;
 
 if (!num) {
-    console.log('Missing size')
+  console.log('Missing size');
 }
 
 while (x < num) {
-    let y = 0
-    new_sentence = ''
-    while (y < num) {
-        process.stdout.write('X');
-        y++;
-    }
-    console.log('');
-    x++;
+  let y = 0;
+
+  while (y < num) {
+    process.stdout.write('X');
+    y++;
+  }
+  console.log('');
+  x++;
 }

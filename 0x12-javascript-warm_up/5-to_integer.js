@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-const num = parseInt(arguments[2])
+const num = parseInt(argv[2]);
 
 if (num) {
-    console.log(`My number: ${num}`)
+  console.log(`My number: ${num}`);
 } else {
-    console.log("Not a number")
+  console.log('Not a number');
 }

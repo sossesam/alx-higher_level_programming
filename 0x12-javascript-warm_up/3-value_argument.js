@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-if (arguments[2]) {
-  console.log(arguments[2]);
+if (argv[2]) {
+  console.log(argv[2]);
 } else {
-    console.log("No argument")
+  console.log('No argument');
 }

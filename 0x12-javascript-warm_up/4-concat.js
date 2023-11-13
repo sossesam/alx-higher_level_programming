@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-const arguments = process.argv;
+const { argv } = module.require('process');
 
-console.log(`${arguments[2]} is ${arguments[3]}`)
+console.log(`${argv[2]} is ${argv[3]}`);
