@@ -7,7 +7,7 @@ class Rectangle {
         this.width = w;
         this.height = h;
 
-        print = function print () {
+        this.print = function () {
           let x = 0;
           while (x < this.height) {
             let y = 0;
@@ -15,7 +15,7 @@ class Rectangle {
               process.stdout.write('X');
               y++;
             }
-            console.log('');
+            console.log();
             x++;
           }
         };
