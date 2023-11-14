@@ -11,7 +11,7 @@ class Rectangle {
       return this;
     }
 
-    this.print = function () {
+    this.print = function print () {
       let x = 0;
       while (x < this.height) {
         let y = 0;
