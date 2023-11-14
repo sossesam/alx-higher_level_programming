@@ -7,7 +7,7 @@ class Rectangle {
         this.width = w;
         this.height = h;
 
-        this.print = function print () {
+        print = function print () {
           let x = 0;
           while (x < this.height) {
             let y = 0;
