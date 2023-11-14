@@ -10,12 +10,7 @@ class Rectangle {
         this.print = function () {
           let x = 0;
           while (x < this.height) {
-            let y = 0;
-            while (y < this.width) {
-              process.stdout.write('X');
-              y++;
-            }
-            console.log();
+            console.log('X'.repeat(this.width))
             x++;
           }
         };
