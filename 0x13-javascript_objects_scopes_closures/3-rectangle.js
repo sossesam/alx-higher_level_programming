@@ -20,9 +20,7 @@ class Rectangle {
           }
         };
       }
-    } else {
-      return this;
-    }
+    } 
   }
 }
 
