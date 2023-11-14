@@ -6,25 +6,24 @@ class Rectangle {
       if (w > 0 && h > 0) {
         this.width = w;
         this.height = h;
-    } else {
-      return this;
+      } else {
+        return this;
+      }
     }
   }
-}
 
-print() {
-  let x = 0;
-  while (x < this.height) {
-    let y = 0;
-    while (y < this.width) {
-      process.stdout.write('X');
-      y++;
+  print () {
+    let x = 0;
+    while (x < this.height) {
+      let y = 0;
+      while (y < this.width) {
+        process.stdout.write('X');
+        y++;
+      }
+      console.log();
+      x++;
     }
-    console.log();
-    x++;
   }
-};
-
 }
 
 module.exports = Rectangle;
