@@ -1,12 +1,12 @@
 #!/usr/bin/node
 
 function esrever (list) {
-  const new_list = [];
+  const newList = [];
   let i = 0;
   while (list[i]) {
-    new_list.unshift(list[i]);
+    newList.unshift(list[i]);
     i++;
   }
-  return new_list;
+  return newList;
 }
 module.exports = { esrever };
