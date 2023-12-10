@@ -24,7 +24,7 @@ if __name__ == "__main__":
                    charset="utf8")
     cur = conn.cursor()
     # HERE I have to know SQL to grab all states in my database
-    cur.execute(f"SELECT * FROM states WHERE name='{s}'")
+    cur.execute("SELECT * FROM states WHERE name='{}' ORDER BY id ASC".format(s))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
