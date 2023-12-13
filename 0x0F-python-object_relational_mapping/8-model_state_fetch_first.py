@@ -22,4 +22,8 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.execute(select(State)).first()
-    print(f"{result[0].id}: {result[0].name}")
+
+    if result:
+        print(f"{result[0].id}: {result[0].name}")
+    else:
+        print("Nothing")
