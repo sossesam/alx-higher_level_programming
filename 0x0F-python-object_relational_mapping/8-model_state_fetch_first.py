@@ -5,7 +5,7 @@ import sys
 from model_state import Base, State
 
 from sqlalchemy import (create_engine)
-from sqlalchemy import asc, desc
+from sqlalchemy import asc, desc, select
 from sqlalchemy.orm import sessionmaker
 
 if __name__ == "__main__":
@@ -21,7 +21,5 @@ if __name__ == "__main__":
 
     session = Session()
 
-    result = session.query(State).filter(State.id==1).order_by(asc(State.id))
-
-    for r in result:
-        print(f"{r.id}: {r.name}")
+    result = session.execute(select(State)).first()
+    print(f"{result[0].id}: {result[0].name}")
