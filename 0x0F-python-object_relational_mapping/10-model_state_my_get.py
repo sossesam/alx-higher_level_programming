@@ -22,7 +22,7 @@ if __name__ == "__main__":
     session = Session()
 
     result = session.query(State).where(State.name == sys.argv[4])
-    
+
     try:
         if result[0]:
             if result[0].name == sys.argv[4]:
@@ -30,6 +30,5 @@ if __name__ == "__main__":
 
             else:
                 print("Not found")
-    except  IndexError:
+    except IndexError:
         print("Not found")
-
