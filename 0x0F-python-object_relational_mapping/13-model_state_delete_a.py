@@ -25,5 +25,3 @@ if __name__ == "__main__":
     for st in ch_state:
         session.delete(st)
     session.commit()
-
-
