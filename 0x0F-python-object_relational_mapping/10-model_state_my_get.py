@@ -29,7 +29,7 @@ if __name__ == "__main__":
                 print(result[0].id)
 
             else:
-                print("Not Found")
+                print("Not found")
     except  IndexError:
-        print("Not Found")
+        print("Not found")
 
