@@ -19,7 +19,7 @@ class State(Base):
     id = Column(Integer, primary_key=True, nullable=False,
                 unique=True, autoincrement=True)
     name = Column(String(128), nullable=False)
-    
+    cities = relationship("City", backref="state")
 
     def __init__(self, name):
         self.name = name

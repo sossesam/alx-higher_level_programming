@@ -16,11 +16,11 @@ class City(Base):
                 primary_key=True, unique=True, nullable=False)
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
-    state  = relationship('State', backref='city') 
+    
 
 
     def __init__(self, name, state):
         self.name = name
-        self.state = state
+        self.state_id = state.id
 
 
