@@ -3,6 +3,7 @@
 """
 Start link class to table in database
 checks if documented
+Start link class to table in database
 """
 
 import sys
