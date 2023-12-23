@@ -14,6 +14,12 @@ from base import Base
 
 
 class State(Base):
+
+    """
+
+    this is meant to be a class"""
+
+
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, nullable=False,
                 unique=True, autoincrement=True)

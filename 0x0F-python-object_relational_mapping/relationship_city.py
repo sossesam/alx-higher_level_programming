@@ -10,6 +10,8 @@ from sqlalchemy.orm import relationship
 
 
 class City(Base):
+    """
+    this is a class kdkd"""
 
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True,
