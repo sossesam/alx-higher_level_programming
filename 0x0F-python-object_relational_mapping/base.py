@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""List all states"""
 
 
 from sqlalchemy import create_engine 
@@ -7,15 +7,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import sys
 
-"""
 
-Create relationship_state file from models_state file. The class attribute
-cities must represent a relationship with the class City.
-If the State object is deleted, all linked City objects must be
-automatically deleted. Also, the reference from a City object
-to his State should be named state
-
-"""
 
 
 engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'

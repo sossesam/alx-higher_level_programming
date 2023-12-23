@@ -1,19 +1,10 @@
 #!/usr/bin/python3
-
+""""List all states"""
 
 from sqlalchemy import Column, Integer, String, ForeignKey
 from base import Base
 from sqlalchemy.orm import relationship 
 
-"""
-
-Create relationship_state file from models_state file. The class attribute
-cities must represent a relationship with the class City.
-If the State object is deleted, all linked City objects must be
-automatically deleted. Also, the reference from a City object
-to his State should be named state
-
-"""
 
 class City(Base):
     """
