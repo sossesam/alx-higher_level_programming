@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
+
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.orm import relationship
+from relationship_city import City
+from base import Base
+
+
 """
 
 Create relationship_state file from models_state file. The class attribute
@@ -9,12 +16,6 @@ automatically deleted. Also, the reference from a City object
 to his State should be named state
 
 """
-
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.orm import relationship
-from relationship_city import City
-from base import Base
-
 
 class State(Base):
 
