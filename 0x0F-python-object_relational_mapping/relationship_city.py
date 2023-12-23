@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 """
+
 Creation of a new file, relationship_city for the
 City class from models_city
 Start link class to table in database
+
 """
 
 from sqlalchemy import Column, Integer, String, ForeignKey
