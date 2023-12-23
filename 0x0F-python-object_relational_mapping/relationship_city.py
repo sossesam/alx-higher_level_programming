@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
 """
 Creation of a new file, relationship_city for the
 City class from models_city
 """
+
 from sqlalchemy import Column, Integer, String, ForeignKey
 from base import Base
 from sqlalchemy.orm import relationship 
@@ -10,7 +12,8 @@ from sqlalchemy.orm import relationship
 
 class City(Base):
     """
-    this is a class kdkd"""
+    this is a class kdkd
+    """
 
     __tablename__ = 'cities'
     id = Column(Integer, autoincrement=True,

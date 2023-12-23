@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 Create relationship_state file from models_state file. The class attribute
 cities must represent a relationship with the class City.
@@ -16,8 +17,8 @@ from base import Base
 class State(Base):
 
     """
-
-    this is meant to be a class"""
+    this is meant to be a class
+    """
 
 
     __tablename__ = 'states'
