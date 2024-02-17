@@ -1,49 +1,29 @@
 #!/usr/bin/python3
-""" This module find the highest number """
-
-def find_peak(number):
-    """this the the function"""
-    pos = 0
-    maxiim = 0
-    if len(number) == 0:
+def find_peak(list_of_integers):
+    length_of_integers = len(list_of_integers)
+    
+    if length_of_integers == 0:
         return None
+    
+    if length_of_integers == 1:
+        return list_of_integers[length_of_integers - 1]
+    
+    mid = int(length_of_integers // 2)
 
-    if len(number) % 2 == 0:
-        max1 = 0
-        while pos < len(number) - 1:
-            
-            if number[pos] >  number[pos + 1]:
-                max1 = number[pos]
-            else:
-                max1 = number[pos + 1]
-            
-            if maxiim < max1:
-                maxiim = max1
-
-            pos = pos + 2
-    else:
-        max1 = 0
-
-        if number[pos] >  number[pos + 1]:
-                max1 = number[pos]
-        pos = pos + 1
+    if length_of_integers == 2:
+        if list_of_integers[0] >= list_of_integers[1]:
+            return list_of_integers[0]
+        else:
+            return list_of_integers[1]
         
-        while pos < len(number) - 1:
-            
-            if number[pos] >  number[pos + 1]:
-                max1 = number[pos]
-            
-            else:
-                max1 = number[pos + 1]
-            
-            if maxiim < max1:
-                maxiim = max1
+    if length_of_integers == 3:
+        if list_of_integers[mid] >= list_of_integers[mid + 1] and list_of_integers[mid] >= list_of_integers[mid - 1]:
+            return list_of_integers[mid]
+        else:
+            return max(list_of_integers[0], list_of_integers[length_of_integers - 1])
 
-            pos = pos + 2
-
-
-    return maxiim
-
-
-
+    if length_of_integers >= 4:
+        max_left = find_peak(list_of_integers[mid:])
+        max_right = find_peak(list_of_integers[:mid])
+        return max(max_left, max_right)
 
