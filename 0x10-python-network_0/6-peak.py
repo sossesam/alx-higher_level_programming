@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+""" This module find the highest number """
+
 def find_peak(number):
+    """this the the function"""
     pos = 0
     maxiim = 0
     if len(number) == 0:
