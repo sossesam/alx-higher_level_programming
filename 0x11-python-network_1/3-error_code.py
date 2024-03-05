@@ -10,12 +10,10 @@ import sys
 
 
 if __name__ == "__main__":
-    url = sys.argv[1]
-    
+    url = sys.argv[1] 
     try:
         with urllib.request.urlopen(url) as req:
             data = req.read()
             print(data.decode("utf-8"))
     except urllib.error.URLError as e:
         print(f"Error code: {e.code}")
-
